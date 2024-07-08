@@ -1,5 +1,5 @@
 {
-  "name": "@kolkov/angular-editor",
+  "name": "@grantmk/angular-editor",
   "version": "3.0.0-beta.0",
   "scripts": {
     "ng": "ng",
@@ -13,13 +13,13 @@
     "test:lib": "ng test angular-editor",
     "build:lib": "ng-packagr -p projects/angular-editor/ng-package.json",
     "build-prod:lib": "ng-packagr -p projects/angular-editor/ng-package.json -c projects/angular-editor/tsconfig.lib.prod.json",
-    "publish:lib": "npm run copy:readme && npm run copy:changelog && npm run copy:license && npm publish ./dist/angular-editor --tag next",
+    "publish:lib": "npm run copy:readme && npm run copy:changelog && npm run copy:license && npm publish --access public ./dist/angular-editor --tag next",
     "copy:readme": "cpx README.md dist/angular-editor",
     "copy:changelog": "cpx CHANGELOG.md dist/angular-editor",
     "copy:license": "cpx LICENSE dist/angular-editor",
     "test-ci": "ng test angular-editor --code-coverage --no-watch --browsers=ChromeHeadless && cat ./coverage/angular-editor/lcov.info | coveralls"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "^13",
     "@angular/common": "^13",
