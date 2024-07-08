@@ -1,6 +1,6 @@
 {
   "name": "@grantmk/angular-editor",
-  "version": "3.0.0-beta.0",
+  "version": "3.0.5",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -14,6 +14,7 @@
     "build:lib": "ng-packagr -p projects/angular-editor/ng-package.json",
     "build-prod:lib": "ng-packagr -p projects/angular-editor/ng-package.json -c projects/angular-editor/tsconfig.lib.prod.json",
     "publish:lib": "npm run copy:readme && npm run copy:changelog && npm run copy:license && npm publish --access public ./dist/angular-editor --tag next",
+    "build-prod-publish": "npm run build-prod:lib && npm run publish:lib",
     "copy:readme": "cpx README.md dist/angular-editor",
     "copy:changelog": "cpx CHANGELOG.md dist/angular-editor",
     "copy:license": "cpx LICENSE dist/angular-editor",

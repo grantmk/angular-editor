@@ -1,3 +1,14 @@
+<p>
+<b>Forked from @kolkov to make a few changes I need (and that many others have requested)</b>
+<br>
+Short list of changes I've made:
+<ul>
+<li>Removed 'default, predefined' from formatting</li>
+<li>Made 'paragraph' the default line return HTML block</li>
+<li></li>
+</ul>
+</p>
+
 <p align="center">
   <img width="150px" src="https://raw.githubusercontent.com/grantmk/angular-editor/master/docs/angular-editor-logo.png?raw=true" alt="AngularEditor logo"/>
 </p>

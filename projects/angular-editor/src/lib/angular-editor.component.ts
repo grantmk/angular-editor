@@ -337,7 +337,7 @@ export class AngularEditorComponent implements OnInit, ControlValueAccessor, Aft
       this.r.appendChild(editableElement, oPre);
 
       // ToDo move to service
-      this.doc.execCommand('defaultParagraphSeparator', false, 'div');
+      this.doc.execCommand('defaultParagraphSeparator', false, 'p');
 
       this.modeVisual = false;
       this.viewMode.emit(false);
